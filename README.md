@@ -1,5 +1,7 @@
 # Nourish Operations case study
 
+**Live site:** [https://cjrw-mav.github.io/case-study/](https://cjrw-mav.github.io/case-study/)
+
 A standalone static conversion of the supplied v7 interview case study. All ten sections, copy, chart geometry and original interactions are preserved. No build command, installation, server or external runtime dependency is required.
 
 ## Files
