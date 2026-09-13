@@ -91,3 +91,5 @@ button:disabled{cursor:default}b,strong{font-weight:bolder}svg{display:block;ver
 @media(min-width:1024px){.columns-4-lg{grid-template-columns:repeat(4,minmax(0,1fr))}}
 @media(min-width:768px){.span-two{grid-column:span 2 / span 2}}
 @media(min-width:768px){.detail-columns{grid-template-columns:1fr 2fr}}
+.experience-list{margin-top:12px;padding-left:18px;list-style:disc;color:var(--n-muted);font-size:14px;line-height:1.5}
+.experience-list li+li{margin-top:8px}

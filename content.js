@@ -83,3 +83,29 @@ first90Days.html = first90Days.html
 
 window.CASE_STUDY.diagnosticLenses[3][2] = window.CASE_STUDY.diagnosticLenses[3][2]
   .replace('adoption · governance.', 'adoption · governance · cost vs benefit.');
+
+const experienceLibrary = window.CASE_STUDY.scenes[8];
+experienceLibrary.html = experienceLibrary.html.replace(
+  '<div class="card"><h3>Product & R&D</h3><p>Product Ops, release management, WIP, Definition of Ready/Done, product analytics, feedback loops, team health, OEM management.</p></div>',
+  '<div class="card"><h3>R&D</h3><ul class="experience-list"><li>Product analytics framework creation (usage, impact, sentiment) to provide shared model for understanding new feature impact</li><li>WIP reduction programme to increase reduce epic cycle time</li><li>Definition of Ready and Definition of Done overhaul to achieve 4x improvements in Public API creation for new features, 100% analytics coverage and Security/DPP risk reduction</li><li>OEM Partner Management incl. partner selection, contract negotiation, launch programme (build, enablement etc) - leading to $1m+ in year revenue impact</li><li>Launched PMO function to cover new product launches, sunsets and field enablement</li><li>Redesigned GTM&lt;&gt;Product feedback loop incl. Salesforce and Uservoice system overhauls, regular shared win/loss reviews and greater collaboration between teams</li><li>Functional lead for design of the tracking and billing mechanism for new consumption based AI products</li></ul></div>'
+)
+  .replace(
+    '<div class="card"><h3>Commercial</h3><p>Sales-to-service handoff, ICP, pricing & packaging, territory planning, account mapping, pre-sales and forecasting.</p></div>',
+    '<div class="card"><h3>Commercial</h3><ul class="experience-list"><li>Sales-to-service handoff</li><li>ICP</li><li>Pricing & packaging</li><li>Territory planning</li><li>Account mapping</li><li>Pre-sales and forecasting</li></ul></div>'
+  )
+  .replace(
+    '<div class="card"><h3>Performance</h3><p>BI, data warehouse, shared reporting, KPI design, executive reviews, capacity models and company-efficiency analysis.</p></div>',
+    '<div class="card"><h3>Performance</h3><ul class="experience-list"><li>BI</li><li>Data warehouse</li><li>Shared reporting</li><li>KPI design</li><li>Executive reviews</li><li>Capacity models and company-efficiency analysis</li></ul></div>'
+  )
+  .replace(
+    '<div class="card"><h3>AI</h3><p>Glean, governance, CISO partnership, AI champions, embedded technical teams, agents and adoption programmes.</p></div>',
+    '<div class="card"><h3>AI</h3><ul class="experience-list"><li>Glean</li><li>Governance</li><li>CISO partnership</li><li>AI champions</li><li>Embedded technical teams</li><li>Agents and adoption programmes</li></ul></div>'
+  )
+  .replace(
+    '<div class="card"><h3>Transformation</h3><p>OKRs, operating rhythm, business reviews, cross-functional programmes, change and post-implementation learning.</p></div>',
+    '<div class="card"><h3>Transformation</h3><ul class="experience-list"><li>OKRs</li><li>Operating rhythm</li><li>Business reviews</li><li>Cross-functional programmes</li><li>Change and post-implementation learning</li></ul></div>'
+  )
+  .replace(
+    '<div class="card"><h3>Investor & External</h3><p>Insight Partners / Onsite, benchmarking, pricing, org design, Pavilion, podcasts, speaking and industry events.</p></div>',
+    '<div class="card"><h3>Investor & External</h3><ul class="experience-list"><li>Insight Partners / Onsite</li><li>Benchmarking</li><li>Pricing</li><li>Org design</li><li>Pavilion</li><li>Podcasts</li><li>Speaking and industry events</li></ul></div>'
+  );
