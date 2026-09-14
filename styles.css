@@ -125,3 +125,9 @@ button:disabled{cursor:default}b,strong{font-weight:bolder}svg{display:block;ver
 .operating-step-detail .experience-list{margin-top:16px}
 .operating-arrow{text-align:center;padding:6px;color:var(--n-purple2);font-weight:700}
 @media(max-width:639px){.operating-step-toggle{grid-template-columns:1fr auto}.operating-step-toggle .pill{grid-column:1}.operating-step-summary{grid-column:1/-1;grid-row:2}.operating-chevron{grid-column:2;grid-row:1}.operating-step-detail{padding-left:18px}}
+.ai-example-tabs button{flex:1;min-width:260px;border:1px solid var(--n-line);border-radius:14px;padding:13px 16px;background:#fff;text-align:left;font-size:14px;font-weight:650;color:var(--n-muted)}
+.ai-example-tabs button[aria-selected="true"]{border-color:var(--n-purple2);box-shadow:inset 0 0 0 1px var(--n-purple2);background:#fbf9fc;color:var(--n-purple)}
+.ai-stage-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+.ai-stage-card:nth-child(3){grid-column:1/-1}
+.ai-stage-card .experience-list{margin-top:16px}
+@media(max-width:767px){.ai-example-tabs button{min-width:100%}.ai-stage-grid{grid-template-columns:1fr}.ai-stage-card:nth-child(3){grid-column:auto}}

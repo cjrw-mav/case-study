@@ -301,3 +301,87 @@ mobiliseAndScale.html = mobiliseAndScale.html
     'Centralise the mechanisms that optimise the enterprise; keep specialist operations close to the functions.',
     'Build systems, not heroes and preserve the creative thinking required in a scale-up!'
   );
+
+const aiCase = window.CASE_STUDY.scenes[7];
+aiCase.html = aiCase.html
+  .replace(
+    'The final case will use a real example with hard evidence.',
+    'Two real examples show the approach with hard evidence.'
+  )
+  .replace(
+    '<div class="space-above-5 inset-large round-medium lavender-panel">',
+    '<div id="ai-examples-v7" class="space-above-7"></div><div class="space-above-5 inset-large round-medium lavender-panel">'
+  );
+
+window.CASE_STUDY.aiExampleStages = [
+  { label: 'Problem', colour: 'red' },
+  { label: 'Diagnose', colour: 'purple' },
+  { label: 'Build + Adopt', colour: 'orange' },
+  { label: 'Impact', colour: 'green' },
+  { label: 'Learn', colour: 'purple' }
+];
+
+window.CASE_STUDY.aiExamples = [
+  {
+    title: 'AI Adoption Challenge - General enterprise readiness',
+    sections: [
+      [
+        'SmartRecruiters had invested in Glean, an enterprise search and AI work platform.',
+        'We were observing incredibly skewed usage - <10% of users driving >90% of search and interactions.',
+        'The potential of Glean was not adequately understood.'
+      ],
+      [
+        'Surveyed and interviewed users.',
+        'Key challenges presented included: Not understanding rules of engagement (what use cases it could solve for, what model to pick, how to get best results, choosing to build an agent or build a skill).',
+        'Power users were concentrated amongst engineers but other functional power users were present (Finance, CS, Sales).',
+        'The problem we were facing was principally a confidence to try problem.'
+      ],
+      [
+        'To encourage experimentation and develop some familiarity with Glean we built a "get-to-know Glean" Agent.',
+        'Conversational agent that would analyse each users role, regular work, calendar/schedule and files to determine the best use cases that Glean could help solve for.',
+        'The Agent would also provide step-by-step instructions and advice on how to try and implement the use cases as well as helping the user prioritise them.',
+        'Coupled with a "Glean 101" education session on AI basics, model selection, prompt writing, difference between a skill, an agent and other terms, this helped break down barriers and provide permission to try.',
+        'To help encourage departmental experimentation, we also developed an agent, rooted in Lean and CI best practices to map existing workflows, understand bottlenecks and suggest enhancements.',
+        'These were used to help inform personal and department based AI Roadmaps.'
+      ],
+      [
+        'Many departments saw increases in DAUs and MAUs from <10% to over 80%.',
+        'The use case element of the agent also provided inspiration for several key projects including RFP Automation, ROI Calculator Agent, Inbox Triaging and Product Feedback Signal Collector.',
+        'Sales teams saw an increase in win rates on deals using ROI calc above 60% compared to <40% on deals without it being used.'
+      ],
+      [
+        'This underlined for me that adoption is primarily a human psychology challenge.',
+        'By giving people the permission to experiment, coupled with that experiment actually being driven by the tech we were trying to have them adopt, led to greater curiosity and speed of experimentation, which then scaled into full process and tool rebuilds.',
+        "Something I'd change next time is to start even smaller, we wasted a bit of effort up front in lining up too many departments rather than selecting the ones with the biggest potential impact."
+      ]
+    ]
+  },
+  {
+    title: 'ROI Calculator - Removing a single point of failure bottleneck',
+    sections: [
+      [
+        'Customers were increasingly looking to understand the potential ROI of SmartRecruiters and CFOs were placing higher scrutiny on business cases.',
+        'We were relying on a several year old ROI calculator and SME expertise to help create the business case (me).'
+      ],
+      [
+        'The existing ROI toolset was outdated (old benchmarks, poor positioning) and cumbersome for reps to use.',
+        "It had a high barrier and commercial fluency requirement so was often avoided unless a prospect's CFO really pushed for it.",
+        'We needed to provide an easier to use tool that still met the bar for CFOs.'
+      ],
+      [
+        'Interviewed key prospects and our own CFO to understand what they needed to see during a business case for investing in SmartRecruiters.',
+        'Re-factored the tool to simplify the number of value drivers and thematically group them to enable easier story-telling.',
+        'Built an automation that allowed Reps to input simple starting numbers and customer information and have a calculated ROI, business case story and coaching points generated.'
+      ],
+      [
+        'Rep usage of the tool hit over 60% of the field, some regions achieving 100%.',
+        'Deal win rates with ROI calc use beat deals without by 20%pp.',
+        'Reps grew more confident in story-telling around ROI and developed higher commercial fluency, often suggesting enhancements to the calculator.'
+      ],
+      [
+        'Putting the automation in a tool reps were familiar with (Slack) helped secure good adoption.',
+        'Over-indexed on the rep coaching points, would seek Sales Leaders to work more closely with their teams on this next time.'
+      ]
+    ]
+  }
+];

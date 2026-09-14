@@ -140,6 +140,26 @@
     });
   }
 
+  function initialiseAiExamples() {
+    const host = root.querySelector('#ai-examples-v7');
+    const examples = content.aiExamples;
+    const stages = content.aiExampleStages;
+    if (!host || !examples || !stages) return;
+
+    host.innerHTML = `<div class="kicker">Two examples</div><div class="ai-example-tabs row row-wrap layout-gap-2 space-above-3" role="tablist" aria-label="AI use case examples">${examples.map((example, index) => `<button type="button" role="tab" aria-selected="${index === 0}" data-ai-example="${index}">${example.title}</button>`).join('')}</div><div class="ai-example-content" aria-live="polite"></div>`;
+    const tabs = [...host.querySelectorAll('[data-ai-example]')];
+    const target = host.querySelector('.ai-example-content');
+
+    function selectAiExample(index) {
+      tabs.forEach((tab, tabIndex) => tab.setAttribute('aria-selected', String(tabIndex === index)));
+      const example = examples[index];
+      target.innerHTML = `<h2 class="type-xl weight-semibold space-above-5">${example.title}</h2><div class="ai-stage-grid card-grid layout-gap-4 space-above-3">${stages.map((stage, stageIndex) => `<div class="card ai-stage-card"><span class="pill ${stage.colour}">${stageIndex + 1} · ${stage.label}</span><ul class="experience-list">${example.sections[stageIndex].map(point => `<li>${point.replace(/</g, '&lt;')}</li>`).join('')}</ul></div>`).join('')}</div>`;
+    }
+
+    tabs.forEach((tab, index) => tab.addEventListener('click', () => selectAiExample(index)));
+    selectAiExample(0);
+  }
+
   previous.addEventListener('click', () => showScene(currentScene - 1));
   next.addEventListener('click', () => showScene(currentScene + 1));
   root.tabIndex = 0;
@@ -153,5 +173,6 @@
   selectOpportunity(0);
   initialisePrioritisationTool();
   initialiseOperatingSystem();
+  initialiseAiExamples();
   showScene(0);
 })();
