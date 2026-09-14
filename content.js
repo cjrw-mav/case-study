@@ -164,7 +164,7 @@ prioritisation.html = prioritisation.html
   )
   .replace(
     'Prioritisation is ultimately an allocation of scarce organisational capacity.',
-    'Retaining focus on the biggest challenges is critical BUT you also need to save a little room for the quick-win that helps keep momentum'
+    'retaining focus on the biggest challenges is critical BUT you also need to save a little room for the quick-win that helps keep momentum'
   )
   .replace(
     '<div class="space-above-5 weight-semibold purple-ink">retaining focus',
