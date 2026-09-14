@@ -215,3 +215,66 @@ operatingPhilosophy.html = operatingPhilosophy.html
     '<p>Standardise where variation creates friction or risk; preserve autonomy where it creates speed, learning, ownership and innovation.</p></div>',
     '<p>Look to standardise where variation creates pain, keep autonomy where it doesn\'t. Prioritise learning, ownership and innovation.</p><div class="space-above-3 weight-semibold type-sm purple-ink">Get people excited about structure and process :)</div></div>'
   );
+
+const operatingSystem = window.CASE_STUDY.scenes[5];
+operatingSystem.html = '<div class="kicker">Operational governance</div><h1 class="title space-above-2">A lightweight operating system for turning strategy into execution.</h1><p class="lead space-above-4">Governance should connect strategy, resource allocation, execution and learning — without becoming bureaucracy.</p><div id="operating-system-flow-v7" class="space-above-7"></div><div class="card-grid columns-4-md layout-gap-3 space-above-5"><div class="card"><h3>Customer value</h3><p>Anchor decisions in realised outcomes.</p></div><div class="card"><h3>Data</h3><p>Create a shared view of performance.</p></div><div class="card"><h3>AI</h3><p>Release capacity and improve workflows.</p></div><div class="card"><h3>Culture</h3><p>Make the mechanisms usable and sustainable.</p></div></div>';
+
+window.CASE_STUDY.operatingSystemStages = [
+  {
+    label: 'Strategy',
+    colour: 'purple',
+    question: 'What outcomes matter?',
+    summary: 'Clarify direction and what the business is trying to change.',
+    points: [
+      'Company-level OKR formation',
+      '>1 year company and product vision',
+      'Strategy deep-dives (monthly Exec/ELT session dedicated deeply to one strategic subject)',
+      'shared company scoreboard'
+    ]
+  },
+  {
+    label: 'Priorities',
+    colour: 'orange',
+    question: 'Where will scarce capacity go?',
+    summary: 'Make trade-offs explicit.',
+    points: [
+      'OKR-cascades',
+      'prioritisation model',
+      'capacity models (engineering bandwidth, sales capacity, WIP, pro-serv capacity)',
+      "Name what we're NOT doing.",
+      'Regular reviews (MBRs, QBRs etc)'
+    ]
+  },
+  {
+    label: 'Portfolio',
+    colour: 'green',
+    question: 'What are we choosing to fund?',
+    summary: 'Make missions, owners and dependencies visible.',
+    points: [
+      'shared view of key programmes - expected benefits, dependencies, status etc.',
+      'Transparent backlog of potential programmes/initiatives'
+    ]
+  },
+  {
+    label: 'Execution',
+    colour: 'purple',
+    question: 'Who owns delivery and decisions?',
+    summary: 'Remove ambiguity and unblock dependencies.',
+    points: [
+      'Clear decision rights, escalation routes and communication paths',
+      'Shared view of performance (metrics that matter)',
+      'Data people can trust'
+    ]
+  },
+  {
+    label: 'Performance + Learning',
+    colour: 'red',
+    question: 'Are outcomes materialising?',
+    summary: 'Learn, intervene and feed insight back into priorities.',
+    points: [
+      'Programme retros',
+      'mission-debriefs',
+      'continuous improvement practices (bug boards, department swaps)'
+    ]
+  }
+];

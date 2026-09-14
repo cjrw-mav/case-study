@@ -111,6 +111,35 @@
     updatePriorities();
   }
 
+  function initialiseOperatingSystem() {
+    const host = root.querySelector('#operating-system-flow-v7');
+    const stages = content.operatingSystemStages;
+    if (!host || !stages) return;
+
+    host.innerHTML = stages.map((stage, index) => {
+      const panelId = `operating-stage-${index}`;
+      const expanded = index === 0;
+      return `${index ? '<div class="operating-arrow" aria-hidden="true">↓</div>' : ''}<div class="card operating-step">
+        <button class="operating-step-toggle" type="button" aria-expanded="${expanded}" aria-controls="${panelId}">
+          <span class="pill ${stage.colour}">${stage.label}</span>
+          <span class="operating-step-summary"><b>${stage.question}</b><span>${stage.summary}</span></span>
+          <span class="operating-chevron" aria-hidden="true">⌄</span>
+        </button>
+        <div id="${panelId}" class="operating-step-detail"${expanded ? '' : ' hidden'}>
+          <ul class="experience-list">${stage.points.map(point => `<li>${point}</li>`).join('')}</ul>
+        </div>
+      </div>`;
+    }).join('');
+
+    host.querySelectorAll('.operating-step-toggle').forEach(button => {
+      button.addEventListener('click', () => {
+        const expanded = button.getAttribute('aria-expanded') === 'true';
+        button.setAttribute('aria-expanded', String(!expanded));
+        root.querySelector(`#${button.getAttribute('aria-controls')}`).hidden = expanded;
+      });
+    });
+  }
+
   previous.addEventListener('click', () => showScene(currentScene - 1));
   next.addEventListener('click', () => showScene(currentScene + 1));
   root.tabIndex = 0;
@@ -123,5 +152,6 @@
   selectLens(0);
   selectOpportunity(0);
   initialisePrioritisationTool();
+  initialiseOperatingSystem();
   showScene(0);
 })();
