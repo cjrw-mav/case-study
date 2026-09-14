@@ -147,3 +147,48 @@ scalingChallenge.html = scalingChallenge.html
     '<div class="card space-above-7 clip">',
     `${todaysChallenges}<div class="card space-above-7 clip">`
   );
+
+const prioritisation = window.CASE_STUDY.scenes[4];
+prioritisation.html = prioritisation.html
+  .replace(
+    'Growth, retention, margin, risk or strategic progress.',
+    'Growth, retention, margin, risk, employee experience or strategic progress.'
+  )
+  .replace(
+    'Does it materially advance a company-level priority?',
+    'Does it align with and help advance company-level priorities?'
+  )
+  .replace(
+    'What happens if this constraint remains in place?',
+    'What is the cost of not acting?'
+  )
+  .replace(
+    'Prioritisation is ultimately an allocation of scarce organisational capacity.',
+    'retaining focus on the biggest challenges is critical BUT you also need to save a little room for the quick-win that helps keep momentum'
+  )
+  .replace(
+    '<div class="space-above-5 weight-semibold purple-ink">retaining focus',
+    '<div id="priority-scorer-v7" class="space-above-7"></div><div class="space-above-5 weight-semibold purple-ink">retaining focus'
+  );
+
+window.CASE_STUDY.prioritisationTool = {
+  kicker: 'Interactive prioritisation',
+  title: 'Compare three key challenges',
+  instruction: 'Score each challenge from 1 to 5 against every criterion. The totals and ranking update as the sliders move.',
+  rankingLabel: 'Current ranking',
+  totalLabel: 'Total score',
+  maximumScore: 30,
+  criteria: [
+    'Customer impact',
+    'Business impact',
+    'Capacity released',
+    'Strategic relevance',
+    'Cost of delay',
+    'Feasibility'
+  ],
+  challenges: [
+    { id: 'release-governance', name: 'Release process governance', scores: [3, 3, 3, 3, 3, 3] },
+    { id: 'customer-health', name: 'Customer health score development', scores: [3, 3, 3, 3, 3, 3] },
+    { id: 'operating-cadence', name: 'Operating cadence overhaul', scores: [3, 3, 3, 3, 3, 3] }
+  ]
+};
