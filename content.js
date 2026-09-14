@@ -385,3 +385,17 @@ window.CASE_STUDY.aiExamples = [
     ]
   }
 ];
+
+const scalingTheOpsTeam = `<div class="space-above-7">
+  <div class="kicker">a note on scaling my Ops team</div>
+  <div class="card-grid columns-2-md layout-gap-4 space-above-3">
+    <div class="card"><h3>Core capabilities my team will need</h3><ul class="experience-list"><li>Programme leadership</li><li>Design thinking</li><li>AI and Automation fluency</li><li>Stakeholder management</li><li>Business analysis skills</li></ul></div>
+    <div class="card"><h3>Tooling considerations</h3><ul class="experience-list"><li>BI/Shared metric layer</li><li>Programme visibility</li><li>AI and automation tools</li><li>Knowledge base (recommend Glean)</li><li>Workflow/Process mapping (recommend Miro)</li></ul></div>
+  </div>
+  <div class="space-above-4 inset-large round-medium lavender-panel"><div class="weight-semibold purple-ink">I can't adequately determine specific roles without first understanding the core issues, what priorities we want to align on and the capabilities required to deliver them.</div></div>
+</div>`;
+
+mobiliseAndScale.html = mobiliseAndScale.html.replace(
+  '<div class="space-above-5 inset-large round-medium cream-panel"><div class="weight-semibold purple-ink">Build systems, not heroes and preserve the creative thinking required in a scale-up!</div></div>',
+  `${scalingTheOpsTeam}<div class="space-above-5 inset-large round-medium cream-panel"><div class="weight-semibold purple-ink">Build systems, not heroes and preserve the creative thinking required in a scale-up!</div></div>`
+);
