@@ -103,7 +103,7 @@ experienceLibrary.html = experienceLibrary.html.replace(
   )
   .replace(
     '<div class="card"><h3>Transformation</h3><p>OKRs, operating rhythm, business reviews, cross-functional programmes, change and post-implementation learning.</p></div>',
-    '<div class="card"><h3>Transformation</h3><ul class="experience-list"><li>OKRs</li><li>Operating rhythm</li><li>Business reviews</li><li>Cross-functional programmes</li><li>Change and post-implementation learning</li></ul></div>'
+    '<div class="card"><h3>Transformation</h3><ul class="experience-list"><li>Implemented and iterated OKR framework for goal setting and innovation</li><li>Established operating rhythm with Exec Weekly, Strategy Deep-Dives, MBRs and QBRs all as part of performance and learning mechanisms</li><li>Pre M&amp;A due diligence - acted as key data room lead and operational translator for due diligence in SAP transaction, then pivoted to lead Product and Engineering integration in 6 months post acquisition including getting SmartRecruiters approved for SAP price list inclusion (included fulfilling over 300 Product Standards) and Legal/DPP/Compliance requirements</li><li>Business reviews</li><li>Cross-functional programmes</li><li>Change and post-implementation learning</li></ul></div>'
   )
   .replace(
     '<div class="card"><h3>Investor & External</h3><p>Insight Partners / Onsite, benchmarking, pricing, org design, Pavilion, podcasts, speaking and industry events.</p></div>',
