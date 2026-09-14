@@ -109,3 +109,41 @@ experienceLibrary.html = experienceLibrary.html.replace(
     '<div class="card"><h3>Investor & External</h3><p>Insight Partners / Onsite, benchmarking, pricing, org design, Pavilion, podcasts, speaking and industry events.</p></div>',
     '<div class="card"><h3>Investor & External</h3><ul class="experience-list"><li>Insight Partners / Onsite</li><li>Benchmarking</li><li>Pricing</li><li>Org design</li><li>Pavilion</li><li>Podcasts</li><li>Speaking and industry events</li></ul></div>'
   );
+
+const scalingChallenge = window.CASE_STUDY.scenes[1];
+const todaysChallenges = `<div class="space-above-7">
+  <div class="kicker">Today's challenges - from analysing your open vacancies</div>
+  <div class="card-grid columns-3-md layout-gap-4 space-above-3">
+    <div class="card challenge-card">
+      <h3>Inconsistent release experience</h3>
+      <div class="challenge-group"><div class="kicker">Impacts</div><ul class="experience-list"><li>wasted Product coordination overhead</li><li>customer escalations</li><li>loss of trust</li><li>GTM confusion</li><li>product impact not as expected</li></ul></div>
+      <div class="challenge-playbooks"><div class="kicker">Playbooks I bring</div><ul class="experience-list"><li>Release process development</li><li>product tiering</li><li>GTM enablement</li><li>adoption monitoring</li></ul></div>
+    </div>
+    <div class="card challenge-card">
+      <h3>Customer health is judgement based not systemised</h3>
+      <div class="challenge-group"><div class="kicker">Impacts</div><ul class="experience-list"><li>accounts get inconsistent attention</li><li>risks not uniformly known</li><li>expansion opportunities not seized</li><li>no reliable view of portfolio health</li><li>no health based segmentation</li><li>renewal planning rests on judgement</li></ul></div>
+      <div class="challenge-playbooks"><div class="kicker">Playbooks I bring</div><ul class="experience-list"><li>Health score creation</li><li>renewal forecasting</li><li>expansion campaign signal development</li></ul></div>
+    </div>
+    <div class="card challenge-card">
+      <h3>Product impact must be understood to make roadmap decisions and evidence value to Customers</h3>
+      <div class="challenge-group"><div class="kicker">Impacts</div><ul class="experience-list"><li>inability to demonstrate measurable outcomes</li><li>tougher renewal conversations</li><li>Product focus splintered</li><li>roadmap decisions become purely opinion-led</li></ul></div>
+      <div class="challenge-playbooks"><div class="kicker">Playbooks I bring</div><ul class="experience-list"><li>Product Impact metric framework creation</li><li>governed roadmap decisioning (JTBD framework + TAM/SAM/SOM + customer value creation)</li><li>data-backed customer success plans</li></ul></div>
+    </div>
+  </div>
+</div>
+`;
+
+scalingChallenge.html = scalingChallenge.html
+  .replace(
+    'The constraint will move as Nourish scales. The operating model needs to move with it.',
+    'New revenue milestones bring new challenges. Challenges that can be prevented or solved quickly.'
+  )
+  .replace('Complexity compounds', 'Complexity increases, focus spreads')
+  .replace(
+    'Org design should follow economics and customer value — not convention.',
+    'Org design should follow economics and customer value.'
+  )
+  .replace(
+    '<div class="card space-above-7 clip">',
+    `${todaysChallenges}<div class="card space-above-7 clip">`
+  );

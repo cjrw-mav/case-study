@@ -93,3 +93,6 @@ button:disabled{cursor:default}b,strong{font-weight:bolder}svg{display:block;ver
 @media(min-width:768px){.detail-columns{grid-template-columns:1fr 2fr}}
 .experience-list{margin-top:12px;padding-left:18px;list-style:disc;color:var(--n-muted);font-size:14px;line-height:1.5}
 .experience-list li+li{margin-top:8px}
+.challenge-card{display:flex;flex-direction:column}
+.challenge-group{margin-top:18px}
+.challenge-playbooks{margin-top:auto;padding-top:18px;border-top:1px solid var(--n-line)}
