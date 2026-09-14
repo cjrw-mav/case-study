@@ -192,3 +192,26 @@ window.CASE_STUDY.prioritisationTool = {
     { id: 'operating-cadence', name: 'Operating cadence overhaul', scores: [3, 3, 3, 3, 3, 3] }
   ]
 };
+
+const operatingPhilosophy = window.CASE_STUDY.scenes[2];
+operatingPhilosophy.html = operatingPhilosophy.html
+  .replace(
+    'Customer value tells us what matters. Missions organise the work. Systems make it repeatable. Technology creates leverage. Culture determines whether any of it sticks.',
+    'Customer and Business value guides us, missions organise the work, systems make it repeatable, technology unlocks capacity and culture helps bring it all together (and stick!)'
+  )
+  .replace(
+    '<p>Understand how value is created before optimising the organisation around it.</p></div>',
+    '<p>Understand how value is created before optimising the organisation around it.</p><div class="space-above-3 weight-semibold type-sm purple-ink">Not understanding this blocks everything else</div></div>'
+  )
+  .replace(
+    '<p>The biggest constraints often sit between teams — handoffs, dependencies, incentives, queues and information flow.</p></div>',
+    '<p>The biggest constraints often sit between teams — handoffs, dependencies, incentives, queues and information flow.</p><div class="space-above-3 weight-semibold type-sm purple-ink">Finding and fixing these often bring outsized value</div></div>'
+  )
+  .replace(
+    '<p>AI and automation should create more space for judgment, creativity, relationships and care.</p></div>',
+    '<p>AI and automation should create more space for judgment, creativity, relationships and care.</p><div class="space-above-3 weight-semibold type-sm purple-ink">I bring a tested approach for mapping and implementing these opportunities</div></div>'
+  )
+  .replace(
+    '<p>Standardise where variation creates friction or risk; preserve autonomy where it creates speed, learning, ownership and innovation.</p></div>',
+    '<p>Look to standardise where variation creates pain, keep autonomy where it doesn\'t. Prioritise learning, ownership and innovation.</p><div class="space-above-3 weight-semibold type-sm purple-ink">Get people excited about structure and process :)</div></div>'
+  );
