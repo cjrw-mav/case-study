@@ -91,15 +91,15 @@ experienceLibrary.html = experienceLibrary.html.replace(
 )
   .replace(
     '<div class="card"><h3>Commercial</h3><p>Sales-to-service handoff, ICP, pricing & packaging, territory planning, account mapping, pre-sales and forecasting.</p></div>',
-    '<div class="card"><h3>Commercial</h3><ul class="experience-list"><li>Sales-to-service handoff</li><li>ICP</li><li>Pricing & packaging</li><li>Territory planning</li><li>Account mapping</li><li>Pre-sales and forecasting</li></ul></div>'
+    '<div class="card"><h3>Commercial</h3><ul class="experience-list"><li>Mapped sales to service journey, identified friction points, created mutual connection points for services earlier in sales cycle. Introduced SOW process to reduce scope misalignment and protect margin. Created new handover rituals and governance to ensure continuity</li><li>Architected ICP deep-dive to fully score all customers and accounts using a CAC:LTV and Sales Velocity approach. Rolled out new ICP to field, helping reduce bookings from poor fit accounts and increase bookings from high fit accounts - massive contributor to increased GRR and NRR</li><li>Rebuilt Pricing &amp; Packaging for core products and new AI offering transferring to a subscription + consumption model. Included deep interviews, surveys and modelling. Contributed to increase in ASP of &gt;5%</li><li>Territory planning</li><li>Account mapping</li><li>Implemented Technical and Functional win tracking in Presales to improve confidence in Sales Forecasting, contributed to improved Presales and Sales collaboration and enhanced conversion rates as well as improving disqualification criteria</li></ul></div>'
   )
   .replace(
     '<div class="card"><h3>Performance</h3><p>BI, data warehouse, shared reporting, KPI design, executive reviews, capacity models and company-efficiency analysis.</p></div>',
-    '<div class="card"><h3>Performance</h3><ul class="experience-list"><li>BI</li><li>Data warehouse</li><li>Shared reporting</li><li>KPI design</li><li>Executive reviews</li><li>Capacity models and company-efficiency analysis</li></ul></div>'
+    '<div class="card"><h3>Performance</h3><ul class="experience-list"><li>Rationalised Tableau, Domo and Metabase to Looker Studio + BigQuery tech stack including rebuild and new build of key business metrics</li><li>Implemented performance dashboards and key metric tracking used as foundation of regular business rhythms such as Exec weekly, MBRs and QBRs</li><li>KPI design</li><li>Executive reviews</li><li>Regular review of capacity across key roles and portfolios such as Customer Success, Account Management, Sales and Professional Services to ensure capacity was optimally deployed. Supported key reorgs through this analysis</li></ul></div>'
   )
   .replace(
     '<div class="card"><h3>AI</h3><p>Glean, governance, CISO partnership, AI champions, embedded technical teams, agents and adoption programmes.</p></div>',
-    '<div class="card"><h3>AI</h3><ul class="experience-list"><li>Glean</li><li>Governance</li><li>CISO partnership</li><li>AI champions</li><li>Embedded technical teams</li><li>Agents and adoption programmes</li></ul></div>'
+    '<div class="card"><h3>AI</h3><ul class="experience-list"><li>Spearheaded Project50k using Glean, a programme to deliver 50k hours back to the business through efficiencies</li><li>Governance</li><li>CISO partnership</li><li>AI champions</li><li>Embedded Data Engineers in key business areas to side-by-side build automations and agents</li><li>Agents and adoption programmes</li></ul></div>'
   )
   .replace(
     '<div class="card"><h3>Transformation</h3><p>OKRs, operating rhythm, business reviews, cross-functional programmes, change and post-implementation learning.</p></div>',
@@ -107,7 +107,7 @@ experienceLibrary.html = experienceLibrary.html.replace(
   )
   .replace(
     '<div class="card"><h3>Investor & External</h3><p>Insight Partners / Onsite, benchmarking, pricing, org design, Pavilion, podcasts, speaking and industry events.</p></div>',
-    '<div class="card"><h3>Investor & External</h3><ul class="experience-list"><li>Insight Partners / Onsite</li><li>Benchmarking</li><li>Pricing</li><li>Org design</li><li>Pavilion</li><li>Podcasts</li><li>Speaking and industry events</li></ul></div>'
+    '<div class="card"><h3>Investor & External</h3><ul class="experience-list"><li>Worked closely with Insight Partners (key investor) on benchmarks, operational best practices and improvement programmes, working with other portfolio companies</li><li>Benchmarking</li><li>Pricing</li><li>Org design</li><li>Ongoing personal development and mentoring through Pavilion - a network of GTM and Product Operators</li><li>Podcasts</li><li>Speaking and industry events</li></ul></div>'
   );
 
 const scalingChallenge = window.CASE_STUDY.scenes[1];
