@@ -278,3 +278,26 @@ window.CASE_STUDY.operatingSystemStages = [
     ]
   }
 ];
+
+const mobiliseAndScale = window.CASE_STUDY.scenes[6];
+mobiliseAndScale.html = mobiliseAndScale.html
+  .replace(
+    'Section 2 · Delivering on it',
+    'Section 07 · Mobilise and Scale'
+  )
+  .replace(
+    'Build enough central capability to optimise the enterprise — not another silo.',
+    'Build a central frame for key systems, processes and operating rhythms. Scale through enabling others to think like an Ops Leader.'
+  )
+  .replace(
+    'The goal is not to pull every Operations role into one organisation. It is to create the connective tissue that helps the enterprise work as one system.',
+    'The goal is not to build an Operations empire, my focus will be on creating foundational structures that scale with the business and developing the operational thinking capability in others that will allow new and improved changes to be continuously built on those foundations.'
+  )
+  .replace(
+    'An unbounded mandate that turns Ops into the fixer of everything; and structure that exists on paper but never becomes organisational behaviour.',
+    'An open-ended mandate that introduces further confusion, ops becoming the fixer of everything and structure that exists on paper but doesn\'t become organisational behaviour. I need your willingness to see through the pain of change.'
+  )
+  .replace(
+    'Centralise the mechanisms that optimise the enterprise; keep specialist operations close to the functions.',
+    'build systems, not heroes and preserve the creative thinking required in a scale-up!'
+  );
